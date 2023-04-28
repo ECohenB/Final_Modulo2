@@ -1,0 +1,44 @@
+* {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.navbar {
+    position: relative;
+    top: 0;
+    background-color:rgb(247, 166, 16);
+    text-align: right; 
+}
+#navbarNav{
+    justify-content: right;
+
+}
+.nav-item {
+    color:white;
+}
+#select-digimon {
+    margin-top: 20px;
+    margin-left: 300px;
+    text-align:center;
+}
+#digimon-table { 
+    margin-top: 20px;
+    text-align:center;
+    row-gap: 2rem;
+    background-color:rgb(24, 151, 236);
+    color: white;
+
+}
+.correo {
+    text-align: center;
+    padding: 5px;
+    background-color:rgb(221, 108, 15);
+    color:whitesmoke;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(250, 195, 13);
+}

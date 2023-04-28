@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon API </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img id="digimon" src="./assets/img/digimon.png" class="img-fluid" alt="profile" width="10%" height="10%">
+            <button type="button" class="btn btn-primary" id="liveToastBtn">DIGIMON API</button>
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                        <img src="./assets/img/patamon.png" class="rounded me-2" alt="patamon" width="60%" height="60%">
+                        <strong class="me-auto">¡Bienvenido!</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Aprende un poco más del mundo Digimon.
+                  </div>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <span class="spacer"></span>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="https://es.wikipedia.org/wiki/Digimon"target="_blank"> Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.filmaffinity.com/es/film419108.html"target="_blank"> Serie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.filmaffinity.com/es/movie-group.php?group-id=39&orderby=pos&chv=list" target="_blank"> Películas</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+       
+    </nav>
+  
+      <table border="2px" id="digimon-table">
+        <thead>
+            <tr>
+                <select id="select-digimon">
+                    <option value="">Selecciona un Digimon</option>
+                </select>
+            </tr>
+          <tr>
+                <th>Nombre</th>
+                <th>Nivel</th>
+                <th>Imagen</th>
+                
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    <main>
+
+        <div class="container-fluig mt-5">
+            <div class="correo">
+                <p class="title">Inscríbete y recibirás más información:</p>
+                <form class="m-3">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="email">
+                    </div>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+
+        
+        
+    </main>
+    <footer>
+        <h4>DIGIMON API </h4>
+        <p>Visita <a href="https://digimon-api.vercel.app/" target="_blank"> https://digimon-api.vercel.app/</a> para conocer más.</p>
+        <p> <a href="#" >@2023_ECB</a> Todos los derechos reservados.</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+</html>
